@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sls offline start",
+    "start:dev": "sls offline start",
+    "start:local": "sls invoke local -f function1 -s dev",
+    "start:remote": "sls invoke -f function1 -s dev",
     "deploy": "sls deploy"
   },
   "keywords": [],
